@@ -12,8 +12,11 @@ const PromptSchema = new Schema({
         tag: {
             type: String,
             required: [true, 'tag is required.'],
+        },
+        dateCreate:{
+            type: String            
         }
-    },{timestamps:true});
+    });
 
 const Prompt = models.Prompt || model('Prompt', PromptSchema);
 
